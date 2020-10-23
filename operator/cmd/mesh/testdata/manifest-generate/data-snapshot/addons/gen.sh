@@ -64,6 +64,5 @@ helm3 template prometheus stable/prometheus \
   kubectl create configmap -n istio-system istio-services-grafana-dashboards \
     --dry-run=client -oyaml \
     --from-file=istio-workload-dashboard.json="${DASHBOARDS}/istio-workload-dashboard.json" \
-    --from-file=istio-service-dashboard.json="${DASHBOARDS}/istio-service-dashboard.json" \
-    --from-file=istio-mesh-dashboard.json="${DASHBOARDS}/istio-mesh-dashboard.json"
+    --from-file=istio-service-dashboard.json="${DASHBOARDS}/istio-service-dashboard.json"
 } > "${ADDONS}/grafana.yaml"

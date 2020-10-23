@@ -84,6 +84,11 @@ var (
 		},
 		{
 			"istio-services-grafana-dashboards",
+			"istio-extension-dashboard.json",
+			[]string{},
+		},
+		{
+			"istio-services-grafana-dashboards",
 			"istio-service-dashboard.json",
 			[]string{
 				"istio_tcp_",
